@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+</head>
+<body>
+    <div class="containr">
+
+        <header>
+            <p class="center">
+                <img src="images/wish.png" alt="#Make A Wish">
+            </p>
+            <nav>
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a class="smoothScroll" href="#Calculate">Calculate</a></li>
+                    <li><a href="yourwishes.html">Your Wishes</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+            <div class="row">
+                <div class="text">
+                    <p><span>Make a wish<br>
+                            and save for it</span><br>
+                        <div class="clear"></div>
+                        <div class="text1">
+                            We help you to save your savings every month
+                        </div>
+                    </p>
+                </div>
+            </div>
+            <p class="center arrow">
+                <a class="smoothScroll" href="#Calculate"><img src="images/Group 8.png" alt=""></a>
+            </p>
+        </header>
+
+    </div>
+
+    </div>
+    <div id="Calculate">
+        <h1 class="center" style="margin-top:45px; margin-bottom:45px;">Calculate</h1>
+        <div class="cal" id="Calculate">
+
+            <div class=>
+                <table>
+                    <tr>
+                        <td>Your Monthly Income</td>
+
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Amount Required</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Calculation Type</td>
+                        <td>
+                            <span style="float:left; display:inline;">
+                                <input  value="savings" type="radio" name="radio" onclick="show1();" checked>
+                                <label style="padding-left: 30px;" for="Savings">Savings</label>
+                            </span>
+                        
+                            <span style="float:left; display:inline; padding-left: 45px;"> 
+                                <input value="time" type="radio" name="radio" onclick="show2();">
+                                <label style="padding-left: 30px;"> Timeperiod</label>
+                            </span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div id="time" class="hide">
+                                <input type="text" placeholder="From Date" style="width:128px;">
+                                <i class="fa fa-calendar-o icon" aria-hidden="true"></i>
+
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+
+                                <input type="text" placeholder="To Date" style="width:128px;">
+                                <i class="fa fa-calendar-o icon" aria-hidden="true"></i>
+
+                            </div>
+                            <div id="savings">
+                                <input type="text" placeholder="Savings Per Month">
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <select>
+                                <option value="Calculate for Month">Calculate in Months</option>
+                                <option value="Calculate for Month">Calculate in Days</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <div class="center">
+                    <h1>Results</h1>
+                    <div class=" center borderd_box ">
+                        You need to save <span class="green">₹500</span> per month,<br>
+                        in order to fulfill your wish in <span class="green">4 months</span>
+                    </div><br>
+                    <button class="big_btn">SAVE TO PROFILE</button>
+                    <p style="font-size:20px; margin-top: 2%;" class="center green">No Need</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="center" style="color:#a0a0a0">
+        Crafted with <i class="fas fa-heart"></i> by Manasa Gowlikar
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('input[type="radio"]').click(function () {
+                var inputValue = $(this).attr("value");
+                var targetBox = $("." + inputValue);
+                $(".box").not(targetBox).hide();
+                $(targetBox).show();
+            });
+            
+
+        });
+        function show1(){
+  document.getElementById('time').style.display ='none';
+  document.getElementById('savings').style.display ='block';
+
+}
+function show2(){
+  document.getElementById('time').style.display = 'block';
+  document.getElementById('savings').style.display = 'none';
+
+}
+    </script>
+</body>
+
+</html>

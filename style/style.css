@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+*,
+body {
+    /* font-family: 'Lato', sans-serif; */
+    font-family: Segoe UI;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+  }
+  
+nav ul li a {
+    text-decoration: none;
+    color: #444444;
+    margin: 20px;
+    padding-bottom: 6px;
+    /* padding:20px 20px 8px 20px; */
+    font-weight: 500;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+
+    border-bottom: #9e9b9b 3px solid;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 28px;
+    color: #444444;
+}
+
+button,
+input[type="button"] {
+    font-size: 18px;
+    background: #AFD17B;
+    color: #fff;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.big_btn {
+    padding: 15px 75px;
+    word-spacing: 2px;
+}
+
+p {
+    font-size: 16px;
+}
+
+p img {
+    margin: 25px auto;
+}
+
+.text p,
+.text p .text1 {
+    float: right;
+    margin-right: 70px;
+}
+
+.containr {
+    height: 715px;
+    background-image: url('../images/Mask Group 1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    min-height: 715px;
+    margin-top: -1px;
+}
+
+.contain {
+    height: 670px;
+    background-image: url('../images/Group 16.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    min-height: 670px;
+    margin-top: -1px;
+}
+
+.center {
+    text-align: center;
+}
+
+.green {
+    color: #A2C76A;
+    margin-top: 5px;
+}
+
+.row {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.text {
+    width: 1200px;
+    position: absolute;
+    margin-top: 150px;
+}
+
+.text1 {
+    float: right;
+    margin-right: 70px;
+    line-height: 70px;
+    text-align: right;
+
+}
+
+p {
+    color: #444444;
+    text-align: right;
+}
+
+p span {
+    font-size: 55px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    line-height: 61px;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.arrow {
+    position: absolute;
+    top: 590px;
+    left: 50%;
+}
+
+form {
+    float: right;
+    margin: 5% 10%;
+    line-height: 40px;
+}
+
+.boxes {
+    padding-top: 35px;
+
+}
+
+.boxes img {
+    margin-top: 14%;
+    margin-left: 10%;
+
+}
+
+.greybg {
+
+    float: right;
+    margin-top: 5%;
+    margin-right: 8%;
+    margin-bottom: -2%;
+    background: #f9f9f9;
+    padding: 175px 60px;
+
+}
+
+input[type=text],
+input[type=password],
+select {
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 15px;
+    border: 2px solid #ecececa3;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+input::placeholder {
+    color: #C5C5C5;
+}
+
+form .box {
+    background: #f9f9f9;
+    padding: 40px 100px;
+}
+
+textarea {
+    font-size: 16px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.cal {
+    background: #efefef42;
+    padding: 50px 110px;
+    width: 50%;
+    margin: 50px auto 144px auto;
+    border: 1px solid #f1eded;
+    border-radius: 5px;
+}
+
+table tr td {
+    width: 400px;
+}
+
+.input_icon i {
+    margin: -30px;
+}
+
+
+.main {
+    height: 650px;
+}
+
+.login {
+    float: right;
+    margin-right: 10%;
+    margin-top: 7%;
+}
+
+.login p {
+    margin-top: 5%;
+}
+
+.ref {
+    text-align: left;
+    font-size: 14px;
+    color: #444444;
+}
+
+.ref a {
+    text-decoration: none;
+    color: #A2C76A;
+
+}
+
+.clear {
+    clear: both;
+}
+
+.profile {
+    background: #f9f9f9;
+    padding: 100px 70px;
+    float: right;
+    margin-right: 12%;
+    margin-top: 3%;
+    width: 25%;
+}
+
+.profile td {
+    height: 45px;
+}
+
+footer {
+    background: #eaeaea;
+    height: 45px;
+    line-height: 45px;
+}
+
+.borderd_box {
+    border: 1px solid #ECECEC;
+    padding-top: 15px;
+    padding-bottom: 40px;
+    padding-left: 25px;
+    padding-right: 35px;
+    width: 82%;
+    margin: auto;
+    text-align: left;
+    background: #fff
+}
+.box{
+    color: #fff;
+    padding: 20px; 
+    margin-top: 20px;
+    }
+.hide{
+    display: none;
+}
+/*-----------Radio-------------*/
+input[type=radio] {
+    opacity: 0;
+    position: absolute;
+}
+
+input[type=radio]+label {
+    background-image: url('../images/radio1.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    margin: 0 20px 0 0px;
+    display: block;
+    height: 21px;
+    line-height: 21px;
+}
+
+input[type=radio]:checked+label {
+    background-image: url('../images/radio2.png');
+
+}
+
+.icon {
+    margin-left: -30px;
+}
